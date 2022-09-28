@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::delete('/berita/delete/{id_berita}', [App\Http\Controllers\BeritaController::class, 'delete'])->name('berita.delete');
     Route::get('/berita/edit/{id_berita}', [App\Http\Controllers\BeritaController::class, 'edit'])->name('berita.edit');
     Route::post('/berita/update', [App\Http\Controllers\BeritaController::class, 'update'])->name('berita.update');
-   
+
 });
 //Route Login dan Logout
 Route::get('login', [LoginController::class, 'index'])->name('login');
@@ -71,7 +71,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('create', [UserController::class, 'create'])->name('user.create');
     Route::post('user/store', [UserController::class, 'store'])->name('user.store');
     Route::delete('user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
-    
+
     //Route Keunggulan
     Route::get('keunggulan', [KeunggulanController::class, 'index'])->name('keunggulan.index');
     Route::get('keunggulan/create', [KeunggulanController::class, 'create'])->name('keunggulan.create');
@@ -97,7 +97,7 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('partner/delete/{id}', [PartnerController::class, 'destroy'])->name('partner.destroy');
 
 });
-// BAGIAN WORK 
+// BAGIAN WORK
 Route::resource('work', \App\Http\Controllers\WorkController::class);
 
 Route::get('/work1', [App\Http\Controllers\WorkController::class, 'index'])->name('work.index');
@@ -107,7 +107,7 @@ Route::get('/work/edit/{id}', [App\Http\Controllers\WorkController::class, 'edit
 Route::post('/work/update', [App\Http\Controllers\WorkController::class, 'update'])->name('work.update');
 Route::post('/work/store', [App\Http\Controllers\WorkController::class, 'work'])->name('work.store');
 Route::delete('/work/destroy/{id}', [App\Http\Controllers\WorkController::class, 'destroy'])->name('work.destroy');
-// SELESAI BAGIAN WORK 
+// SELESAI BAGIAN WORK
 Route::resource('testimoni', \App\Http\Controllers\Testimonicontroller::class);
 //route resource
 Route::resource('/posts', \App\Http\Controllers\PostController::class);
@@ -147,7 +147,7 @@ Route::resource('/galeri', \App\Http\Controllers\GaleriController::class);
 Route::resource('offline', \App\Http\Controllers\OfflineController::class)->middleware('auth');
 Route::resource('/virtualtour', \App\Http\Controllers\VirtualtourController::class)->middleware('auth');
 
-// Route::resource('/offlinetour', \App\Http\Controllers\OfflineTourController::class); 
+Route::resource('/offlinetour', \App\Http\Controllers\OfflineTourController::class);
 
 Route::get('/pembayaran', [HomeController::class, 'pembayaran'])->name('pembayaran');
 

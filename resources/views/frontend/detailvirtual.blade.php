@@ -12,7 +12,7 @@
 <div class="container">
     <div class="row">
         <body>
-            </br>
+            <br>
             <div class="col-md-12 mt-2">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -41,7 +41,7 @@
                                             <td>:</td>
                                             <td> {{ $virtual_tour->tanggal_pelaksanaan }} </td>
                                         </tr>
-             
+
                                         <tr>
                                             <td>Metode Pembayaran</td>
                                             <td>:</td>
@@ -52,13 +52,13 @@
                                                     <select name='sel_depart' class="form-select">
                                                         <option value="0">BCA</option>
                                                     </select>
-                                                
+
                                                     <div class="form-group mt-4 mb-4">
                                                         <div class="captcha">
                                                             <span>{!! captcha_img('math') !!}</span>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="form-group mb-4">
                                                         <input id="captcha" type="text" class="form-control @error ('captcha') is-invalid @enderror" placeholder="Masukkan Captcha" name="captcha" require>
 

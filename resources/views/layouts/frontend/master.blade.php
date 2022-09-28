@@ -47,12 +47,12 @@
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+6281249605055</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        
+
         <a link href="https://www.twitter.com/travelxism" class="twitter"><i class="bi bi-twitter"></i></a>
         <a link href="https://www.facebook.com/travelxism" class="facebook"><i class="bi bi-facebook"></i></a>
         <a link href="https://www.instagram.com/travelxism" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-       
+
       </div>
     </div>
   </section>
@@ -62,14 +62,14 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="{{ ('home') }}" class="logo"><img src="assets/img/logo.png" alt=""></a></h1>
-      
+
       <!-- Uncomment below if you prefer to use an image logo -->
-      
+
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="{{ ('home') }}">Home</a></li>
-          
+
           <li class="dropdown"><a href="{{ ('about') }}"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ ('about') }}">About</a></li>
@@ -78,7 +78,7 @@
             </ul> </li>
           <li class="dropdown"><a href="#"><span>Store</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Offline Tour</a></li>
+              <li><a href="{{ ('offlinetour') }}">Offline Tour</a></li>
               <li><a href="#">Virtual Tour</a></li>
             </ul>
           </li>
@@ -91,7 +91,7 @@
           </form></li>
           <!-- <li><button class="nav-link btn btn btn-primary" type="button" href="{{ ('login') }}">Login</button></li> -->
           <li><a href="{{'login'}}" class="btn btn-md btn-primary p-2 text-white" style="text-decoration: none; underline:none;">Login</a></li>
-         
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -139,7 +139,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Virtual Tour</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Virtual Exhibition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Event</a></li>
-              
+
             </ul>
           </div>
 
@@ -160,7 +160,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="{{ ('about') }}">Kontak</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{ ('partnerfront') }}">Partnership</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Campaign</a></li>
-            
+
             </ul>
           </div>
 
@@ -170,7 +170,7 @@
             <iframe class="mb-9 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.089019616312!2d110.35887711432639!3d-7.780385779350807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599336d9fd05%3A0xff18b3ac7b9066ff!2sTravelxism%20Sustainable%20Tour!5e0!3m2!1sid!2sid!4v1653377082295!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 100px;" allowfullscreen></iframe>
             </div>
             <h4>Our Social Media</h4>
-           
+
             <div class="social-links mt-3">
               <a href="https://www.twitter.com/travelxism" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/travelxism" class="facebook"><i class="bx bxl-facebook"></i></a>
